@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Across the Seas</title>
+        <title>Mirko - Portfolio</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
         <!-- Bootstrap icons-->
@@ -19,7 +19,7 @@
         <!-- Navigation-->
         <nav class="navbar navbar-light bg-light static-top">
             <div class="container">
-                <a class="navbar-brand" href="#!">Across the Seas</a>
+                <a class="navbar-brand" href="#!">About</a>
                 <a class="btn btn-primary" href="#signup">Contact</a>
             </div>
         </nav>
@@ -30,7 +30,7 @@
                     <div class="col-xl-6">
                         <div class="text-center text-white">
                             <!-- Page heading-->
-                            <h1 class="mb-5">Still working on my portfolio webpage</h1>
+                            <h1 class="mb-5">Scroll down to learn more <br/> [Still work in progress]</h1>
                             <!-- Signup form-->
                             <!-- * * * * * * * * * * * * * * *-->
                             <!-- * * SB Forms Contact Form * *-->
@@ -39,38 +39,74 @@
                             <!-- To make this form functional, sign up at-->
                             <!-- https://startbootstrap.com/solution/contact-forms-->
                             <!-- to get an API token!-->
-                            <form class="form-subscribe" id="contactForm" data-sb-form-api-token="API_TOKEN">
-                                <!-- Email address input-->
-                                <div class="row">
-                                    <div class="col">
-                                        <input class="form-control form-control-lg" id="emailAddress" type="email" placeholder="Email Address" data-sb-validations="required,email" />
-                                        <div class="invalid-feedback text-white" data-sb-feedback="emailAddress:required">Email Address is required.</div>
-                                        <div class="invalid-feedback text-white" data-sb-feedback="emailAddress:email">Email Address Email is not valid.</div>
-                                    </div>
-                                    <div class="col-auto"><button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button></div>
-                                </div>
-                                <!-- Submit success message-->
-                                <!---->
-                                <!-- This is what your users will see when the form-->
-                                <!-- has successfully submitted-->
-                                <div class="d-none" id="submitSuccessMessage">
-                                    <div class="text-center mb-3">
-                                        <div class="fw-bolder">Form submission successful!</div>
-                                        <p>To activate this form, sign up at</p>
-                                        <a class="text-white" href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                                    </div>
-                                </div>
-                                <!-- Submit error message-->
-                                <!---->
-                                <!-- This is what your users will see when there is-->
-                                <!-- an error submitting the form-->
-                                <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                            </form>
+                            <!-- Some form -->
                         </div>
                     </div>
                 </div>
             </div>
         </header>
+        <!-- Testimonials-->
+        <section class="testimonials text-center bg-light">
+            <div class="container">
+                <h2 class="mb-5">About myself</h2>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                            <img class="img-fluid rounded-circle mb-3" src="assets/img/testimonials-3.jpg" alt="..." />
+                            <h5>Mirko</h5>
+                            <p class="font-weight-light mb-0">"Game dev, databases and front-end, that sort of thing"</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                            <h5>Info</h5>
+                            <br/>
+                            <p class="font-weight-light mb-0">I'm still a computer science student so I'm still learning as I go. I'm preety decent in designing and making front-end related web pages, mostly in React. Love game development, working mostly in Unity and trying to learn Godot. Current interests are NOSQL databases, worked on projects that were built using Redis, Neo4J and MongoDB.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                            <h5>Projects</h5>
+                            <br/>
+                            <div class="features-icons-icon d-flex"><img class="bi-window m-auto text-primary" src="./assets/img/github.png"></i></div>
+                            <p class="font-weight-light mb-0">Underneath are some of my projects that are also available on my <a href="https://github.com/Mirko-125">github page</a>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Image Showcases-->
+        <section class="showcase">
+            <div class="container-fluid p-0">
+                <div class="row g-0">
+                    <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('assets/img/bg-showcase-1.jpg')"></div>
+                    <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+                        <h2>Sails in Flames</h2>
+                        <p class="lead mb-0">Sails in Flames is a battleship-worms mashup 2 player strategy game made for an uni project with my friend. It's built in Unity for the base game's human interaction and for server comms SignalR is used. During development lots of design patterns were used. The game might receive an update in future.</p>
+                        <br/>
+                        <a href="https://github.com/Mirko-125/Sails-in-Flames">Game's source code</a>
+                    </div>
+                </div>
+                <div class="row g-0">
+                    <div class="col-lg-6 text-white showcase-img" style="background-image: url('assets/img/bg-showcase-2.jpg')"></div>
+                    <div class="col-lg-6 my-auto showcase-text">
+                        <h2>Moj Mongo frižider</h2>
+                        <p class="lead mb-0">Moj Mongo frižider (En. my Mongo fridge) is a SPA web app in which user can select which food ingredients he has at his home and in return the page will return all the recipes that he can make with those selected items. Except the base users, the app has cheffs which as the name tells they can post their cousines and recipes with mentioned ingredients. The purpouse of the project was the use of document databases, in this case, MongoDB. App also has social media aspects, such as likes and reccomendations.</p>
+                        <br/>
+                        <a href="https://github.com/Mirko-125/Moj-Mongo-Frizider">Projects's full source code</a>
+                    </div>
+                </div>
+                <div class="row g-0">
+                    <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('assets/img/bg-showcase-3.jpg')"></div>
+                    <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+                        <h2>Yelp restaurants</h2>
+                        <p class="lead mb-0">In this project there were used the principles of reactive programming and the Yelp API. This small application is analyzing comments for restaurants for the forwarded location (location parameter). For the collected comments, there were implemented Sentiment analysis using ML.NET library. The console in the picture shows the percentage of positive and negative comments for the collected restaurants.</p>
+                        <br/>
+                        <a href="https://github.com/Mirko-125/Yelp-restaurants">Projects's detailed code</a>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- Icons Grid-->
         <section class="features-icons bg-light text-center">
             <div class="container">
@@ -94,61 +130,6 @@
                             <div class="features-icons-icon d-flex"><img class="bi-window m-auto text-primary" src="./assets/img/island.png"></i></div>
                             <h3>New islands</h3>
                             <p class="lead mb-0">Discover new islands and cultures</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Image Showcases-->
-        <section class="showcase">
-            <div class="container-fluid p-0">
-                <div class="row g-0">
-                    <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('assets/img/bg-showcase-1.jpg')"></div>
-                    <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-                        <h2>Immersive landscapes</h2>
-                        <p class="lead mb-0">Across the Seas allows you to explore new islands "across the sea" by traveling in our newest and finest boats. Enjoy the beautifull golden hours and calm sea, which you will experience on various beautifull islands</p>
-                    </div>
-                </div>
-                <div class="row g-0">
-                    <div class="col-lg-6 text-white showcase-img" style="background-image: url('assets/img/bg-showcase-2.jpg')"></div>
-                    <div class="col-lg-6 my-auto showcase-text">
-                        <h2>Fresh air</h2>
-                        <p class="lead mb-0">Have you ever thought about how therapeutic it is to visit the beach? Toes in the sand, sound of the waves and breathing in the fresh sea air! Across the Seas suggests the ocean, especially breathing ocean air, has commonly been referred to as a source of healing for all types of ailments, including certain lung diseases.</p>
-                    </div>
-                </div>
-                <div class="row g-0">
-                    <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('assets/img/bg-showcase-3.jpg')"></div>
-                    <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-                        <h2>Start a local buisness</h2>
-                        <p class="lead mb-0">Start off your new buisness far away from home</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Testimonials-->
-        <section class="testimonials text-center bg-light">
-            <div class="container">
-                <h2 class="mb-5">What people are saying...</h2>
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-                            <img class="img-fluid rounded-circle mb-3" src="assets/img/testimonials-1.jpg" alt="..." />
-                            <h5>May</h5>
-                            <p class="font-weight-light mb-0">"I can't believe how many breathtaking people have I met in my journeys!"</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-                            <img class="img-fluid rounded-circle mb-3" src="assets/img/testimonials-2.jpg" alt="..." />
-                            <h5>Hideo</h5>
-                            <p class="font-weight-light mb-0">"Thanks to you, I've expanded my buisness across the world!"</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-                            <img class="img-fluid rounded-circle mb-3" src="assets/img/testimonials-3.jpg" alt="..." />
-                            <h5>Hana</h5>
-                            <p class="font-weight-light mb-0">"A lifechanging experience!"</p>
                         </div>
                     </div>
                 </div>

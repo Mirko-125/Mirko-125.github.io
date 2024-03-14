@@ -10914,3 +10914,13 @@ img {
   -ms-user-select: none; 
   user-select: none; 
 }
+
+.blur {
+  filter: blur(5px);
+  transition: filter 0.3s ease-in-out;
+}
+
+.blur:hover {
+  user-select: text;
+  filter: blur(0px); 
+}

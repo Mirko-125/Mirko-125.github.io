@@ -13,9 +13,9 @@
     </head>
     <body>
         <nav class="navbar navbar-light bg-light static-top">
-            <div class="container">
-                <a class="navbar-brand" href="#!">About</a>
-                <a class="btn btn-primary" href="#signup">Contact</a>
+            <div class="container position-relative d-flex align-items-center">
+                <a class="btn btn-primary ms-auto" href="#signup">Contact</a>
+                <a class="navbar-brand position-absolute start-50 translate-middle-x m-0" href="https://github.com/Mirko-125">Software Developer</a>
             </div>
         </nav>
         <header class="masthead">
@@ -23,7 +23,7 @@
                 <div class="row justify-content-center">
                     <div class="col-xl-6">
                         <div class="text-center text-white">
-                            <h1 class="mb-5">Hello there!<br/> [Scroll down to learn more]</h1>
+                            <h1 class="mb-5 text-nowrap">Hello there!<br/> [Scroll down to learn more]</h1>
                         </div>
                     </div>
                 </div>
@@ -141,8 +141,15 @@ particular, I worked on projects that utilized Redis, Neo4J, and MongoDB.</p>
                                     <div class="container position-relative">
                                         <div class="row justify-content-center">
                                             <div class="col-xl-6">
-                                                <h2 class="mb-4">Wanna reach out? Hover to get my mail</h2>
-                                                <h2 class="mb-4 blur">mirkoat21.01@gmail.com</h2>
+                                                <h2 class="mb-4 text-nowrap">Wanna reach out? Hover to get my mail</h2>
+                                                <h2 class="mb-4 blur">
+                                                    <a
+                                                        id="emailLink"
+                                                        href="#"
+                                                        style="color: inherit; text-decoration: none; cursor: pointer;"
+                                                        aria-label="Email address"
+                                                    >mirkoat21.01 [at] gmail [dot] com</a>
+                                                </h2>
                                                 <br/>
                                                 <br/>
                                                 <br/>

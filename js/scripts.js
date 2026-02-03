@@ -8,11 +8,12 @@
   if (!a) return;
 
   const email = `${profile.username}@${profile.domain}`;
+  const mailto = `mailto:${email}`;
 
-  a.addEventListener("click", (e) => {
-    if (a.getAttribute("href") === "#" || !a.href) e.preventDefault();
-  });
-
-  a.href = `mailto:${email}`;
+  a.setAttribute("href", mailto);
   a.rel = "nofollow";
+
+  a.addEventListener("click", () => {
+    a.setAttribute("href", mailto);
+  });
 })();
